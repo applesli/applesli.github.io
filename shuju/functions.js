@@ -40,8 +40,8 @@ $(window).resize(function() {
 function timeElapse(date){
 	var current = Date();
 	var seconds = (Date.parse(current) - Date.parse(date)) / 1000;
-	conlose.log(Date.parse(current));
-	conlose.log(Date.parse(date));
+	console.log(Date.parse(current));
+	console.log(Date.parse(date));
 	var days = Math.floor(seconds / (3600 * 24));
 	seconds = seconds % (3600 * 24);
 	var hours = Math.floor(seconds / 3600);
